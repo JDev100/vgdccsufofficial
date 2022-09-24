@@ -47,7 +47,7 @@ const Hero = ({ title, subtitle, image, ctaLink, ctaText, ...props }) => {
 
         <Link to={ctaLink}>
           <Button
-            variantColor="primary"
+            variantcolor="primary"
             borderRadius="8px"
             py="4"
             px="4"
