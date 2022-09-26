@@ -19,7 +19,7 @@ const BlogCard = ({ image, badges, date, title, desc, href }) => {
         <Image src={image} size="100%" rounded="1rem" shadow="2xl" />
       
       </Box> */}
-        <Box w="100%" mb={{ base: 12, md: 0 }} mx="auto">
+        <Box w="100%" mx="auto">
           <Image src={image} size="100%" rounded="1rem" shadow="2xl" />
         </Box>
         <Box>
@@ -43,7 +43,7 @@ const BlogCard = ({ image, badges, date, title, desc, href }) => {
               {desc}
             </Text>
             <NextLink href={href} passHref>
-              <a target="_blank">
+              <a>
                 <Button variant="solid" size="sm" colorScheme="blue">
                   Read More
                 </Button>
