@@ -4,6 +4,7 @@ import path from "path";
 import { SimpleGrid, Heading } from "@chakra-ui/react";
 import BlogCard from "../components/blogcard";
 import matter from "gray-matter";
+import {sortByDate} from '../utils'
 
 const Blog = ({ posts }) => {
   console.log(posts);
@@ -69,7 +70,7 @@ export async function getStaticProps() {
   console.log(posts);
   return {
     props: {
-      posts: posts,
+      posts: posts.sort(sortByDate),
     },
   };
 }
