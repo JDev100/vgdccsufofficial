@@ -4,7 +4,7 @@ import Profile from "../profile";
 const ProfileGroup = () => {
   return (
     <>
-      <SimpleGrid columns={[1, 2, 3, 4]} spacing={10} mb={16}>
+      <SimpleGrid columns={[1, 2, 3, 3]} spacing={10} mb={16}>
         
         <Profile img='/images/profile-1.jpg' name='Maria Garcia' title='Club President'/>
         <Profile img='/images/profile-2.jpg' name='John Doe' title='Treasurer'/>
