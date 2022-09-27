@@ -13,7 +13,6 @@ import {
   Text,
   Wrap,
 } from "@chakra-ui/react";
-import BlogBox from "../../components/sections/blogbox";
 const PostPage = ({
   frontmatter: { title, date, cover_image },
   slug,
@@ -31,14 +30,14 @@ const PostPage = ({
             size="xl"
             fontWeight="bold"
             color="primary.800"
-            textAlign={["center", "center", "left", "left"]}
+            textAlign='left'
           >
             {title}
           </Heading>
           <Text as="h5" fontWeight="bold" mt={2} fontSize="md" mb={4}>
             Posted on {date}
           </Text>
-          <Box w="100%" mb={16} mx="auto">
+          <Box w="100%" mb={8} mx="auto">
             <Image src={cover_image} size="100%" rounded="1rem" shadow="2xl" />
           </Box>
             <div className="blog">
